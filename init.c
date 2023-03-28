@@ -6,7 +6,7 @@
 /*   By: nwai-kea <nwai-kea@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/22 22:09:40 by nwai-kea          #+#    #+#             */
-/*   Updated: 2023/03/28 17:19:56 by nwai-kea         ###   ########.fr       */
+/*   Updated: 2023/03/28 22:12:52 by nwai-kea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,6 @@ t_nodes	*ft_init_nodes(t_nodes *s)
 
 void	ft_init_stacks(t_stack *ps, int argc, int type)
 {
-	// ps = malloc(sizeof(t_stack));
 	ps->a = malloc(sizeof(t_info));
 	ps->b = malloc(sizeof(t_info));
 	if (type == 0)

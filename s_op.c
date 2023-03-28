@@ -6,12 +6,12 @@
 /*   By: nwai-kea <nwai-kea@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/27 23:40:01 by nwai-kea          #+#    #+#             */
-/*   Updated: 2023/03/11 22:06:41 by nwai-kea         ###   ########.fr       */
+/*   Updated: 2023/03/28 22:20:34 by nwai-kea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push_swap.h"
 #include "libft/libft.h"
+#include "push_swap.h"
 #include <unistd.h>
 
 void	ft_swap(t_node **node)

@@ -6,7 +6,7 @@
 /*   By: nwai-kea <nwai-kea@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/26 17:45:21 by marvin            #+#    #+#             */
-/*   Updated: 2023/03/28 18:35:11 by nwai-kea         ###   ########.fr       */
+/*   Updated: 2023/03/28 22:20:24 by nwai-kea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ void	resend_b(t_nodes *s, t_stack *ps, int lim)
 
 void	return_to_a(t_nodes *s, t_stack *ps, int lim)
 {
-	int size;
+	int	size;
 
 	size = ft_lstsize2(s->b);
 	if (size < 50)

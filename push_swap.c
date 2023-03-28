@@ -6,7 +6,7 @@
 /*   By: nwai-kea <nwai-kea@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/22 21:17:24 by nwai-kea          #+#    #+#             */
-/*   Updated: 2023/03/28 21:58:57 by nwai-kea         ###   ########.fr       */
+/*   Updated: 2023/03/28 22:11:00 by nwai-kea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,15 +63,6 @@ int	stack_full(t_node *a, int size)
 		return (0);
 }
 
-void	printlst(t_node *a)
-{
-	while (a)
-	{
-		ft_printf("%d\n", a->index);
-		a = a->next;
-	}
-}
-
 int	main(int argc, char **argv)
 {
 	t_nodes	*s;
@@ -80,8 +71,6 @@ int	main(int argc, char **argv)
 	s = NULL;
 	s = ft_init_nodes(s);
 	ft_init(s, &ps, argc, argv);
-	// printlst(s->a);
-	// exit(1);
 	sort(s, &ps);
 	ft_lstclear2(&(s->a));
 	ft_lstclear2(&(s->b));

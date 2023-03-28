@@ -6,7 +6,7 @@
 /*   By: nwai-kea <nwai-kea@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/17 19:25:49 by nwai-kea          #+#    #+#             */
-/*   Updated: 2023/03/26 21:14:12 by nwai-kea         ###   ########.fr       */
+/*   Updated: 2023/03/28 22:19:33 by nwai-kea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,8 +38,8 @@ static int	count_rr(t_node *b, int next_sort, int count)
 
 int	choose_rotation(t_node *b, int limit)
 {
-	int r;
-	int rr;
+	int	r;
+	int	rr;
 
 	r = count_r(b, limit, 0);
 	while (b->next != NULL)

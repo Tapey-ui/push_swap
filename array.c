@@ -6,13 +6,13 @@
 /*   By: nwai-kea <nwai-kea@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/10 19:25:11 by nwai-kea          #+#    #+#             */
-/*   Updated: 2023/03/20 16:29:29 by nwai-kea         ###   ########.fr       */
+/*   Updated: 2023/03/28 22:19:21 by nwai-kea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-int		partition(int *arr, int left, int right)
+int	partition(int *arr, int left, int right)
 {
 	int	i;
 	int	j;
@@ -39,7 +39,7 @@ int		partition(int *arr, int left, int right)
 	return (i);
 }
 
-void	quicksort_array(int	*arr, int left, int right)
+void	quicksort_array(int *arr, int left, int right)
 {
 	int	pivot;
 

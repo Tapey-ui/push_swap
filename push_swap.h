@@ -6,14 +6,13 @@
 /*   By: nwai-kea <nwai-kea@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/22 19:43:07 by nwai-kea          #+#    #+#             */
-/*   Updated: 2023/03/27 22:09:38 by nwai-kea         ###   ########.fr       */
+/*   Updated: 2023/03/28 22:12:36 by nwai-kea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef PUSH_SWAP_H
 # define PUSH_SWAP_H
 
-# include "ft_printf/ft_printf.h"
 # include <limits.h>
 # include <stdio.h>
 # include <stdlib.h>
@@ -82,8 +81,6 @@ void				ft_rb(t_node **b);
 void				ft_rr(t_node **a, t_node **b);
 void				ft_rewind(t_node **a);
 int					find_median(int a, int b);
-// int			count_r(t_node **b, int ps->a_low, int count);
-// int			count_rr(t_node **b, int ps->a_low, int count);
 int					choose_rotation(t_node *b, int limit);
 void				send_to_b(t_nodes *s, t_stack *ps);
 void				complete_sort(t_nodes *s, t_stack *ps);

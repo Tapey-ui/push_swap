@@ -6,7 +6,7 @@
 /*   By: nwai-kea <nwai-kea@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/02 18:05:28 by nwai-kea          #+#    #+#             */
-/*   Updated: 2023/03/26 21:26:21 by nwai-kea         ###   ########.fr       */
+/*   Updated: 2023/03/28 22:19:56 by nwai-kea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ void	ft_pa(t_node **a, t_node **b)
 
 void	ft_pb(t_node **a, t_node **b)
 {
-	t_node *tmp;
+	t_node	*tmp;
 
 	if (*a == NULL)
 		return ;
