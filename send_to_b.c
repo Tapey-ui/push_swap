@@ -6,7 +6,7 @@
 /*   By: nwai-kea <nwai-kea@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/26 15:03:30 by marvin            #+#    #+#             */
-/*   Updated: 2023/03/26 20:23:26 by nwai-kea         ###   ########.fr       */
+/*   Updated: 2023/03/28 21:50:50 by nwai-kea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,12 +72,12 @@ void	send_min(t_nodes *s, t_stack *ps, int size)
 
 void	send_to_b(t_nodes *s, t_stack *ps)
 {
-	int size;
+	int	size;
 
 	init_values(s, ps, &size);
 	if ((ps->a->high - ps->a->low) < 10)
 	{
-		while (s->a->index > 0)
+		while (s->a && s->a->index >= ps->a->low)
 			send_b(s, ps);
 	}
 	else

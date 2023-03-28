@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   sort_a.c                                           :+:      :+:    :+:   */
+/*   sort.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nwai-kea <nwai-kea@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/17 13:43:28 by nwai-kea          #+#    #+#             */
-/*   Updated: 2023/03/25 17:38:25 by nwai-kea         ###   ########.fr       */
+/*   Updated: 2023/03/28 18:16:35 by nwai-kea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-int		last_num(t_node *node)
+int	last_num(t_node *node)
 {
 	while (node->next != NULL)
 		node = node->next;
@@ -23,7 +23,8 @@ void	order_a(t_nodes *s, t_stack *ps)
 {
 	if (s->a->index == 0)
 		ft_ra(&s->a);
-	while (((s->a->index + 1) == (s->a->next->index)) && ((s->a->index - 1) == last_num(s->a)))
+	while (((s->a->index + 1) == (s->a->next->index)) && ((s->a->index
+				- 1) == last_num(s->a)))
 		ft_ra(&s->a);
 	if (((s->a->index - 1) == last_num(s->a)))
 		ft_ra(&s->a);

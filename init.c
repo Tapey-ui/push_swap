@@ -6,7 +6,7 @@
 /*   By: nwai-kea <nwai-kea@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/22 22:09:40 by nwai-kea          #+#    #+#             */
-/*   Updated: 2023/03/27 22:21:46 by nwai-kea         ###   ########.fr       */
+/*   Updated: 2023/03/28 17:19:56 by nwai-kea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,7 +80,7 @@ void	ft_init(t_nodes *s, t_stack *ps, int argc, char **argv)
 		argv = one_arg(&argc, argv);
 		s->a = ft_insert_a(argc, argv, 0);
 		ft_init_stacks(ps, argc, 0);
-		ps->arr = fill_array(s->a, argc - 1, 0);
+		ps->arr = fill_array(s->a, argc, 0);
 		ft_index(s->a, ps->arr);
 	}
 	else

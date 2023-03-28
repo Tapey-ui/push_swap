@@ -6,7 +6,7 @@
 /*   By: nwai-kea <nwai-kea@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/21 19:09:52 by nwai-kea          #+#    #+#             */
-/*   Updated: 2023/03/21 19:10:04 by nwai-kea         ###   ########.fr       */
+/*   Updated: 2023/03/28 21:58:24 by nwai-kea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,10 +15,11 @@
 void	ft_error(int i)
 {
 	write(1, "Error\n", 6);
+	system("leaks -q push_swap");
 	exit(i);
 }
 
-int		check_repeat(int *arr, int size)
+int	check_repeat(int *arr, int size)
 {
 	int	i;
 	int	j;
