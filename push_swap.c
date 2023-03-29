@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   push_swap.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nwai-kea <nwai-kea@student.42kl.edu.my>    +#+  +:+       +#+        */
+/*   By: nwai-kea <nwai-kea@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/29 02:02:20 by nwai-kea          #+#    #+#             */
-/*   Updated: 2023/03/29 02:02:20 by nwai-kea         ###   ########.fr       */
+/*   Updated: 2023/03/29 16:23:49 by nwai-kea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,6 +75,5 @@ int	main(int argc, char **argv)
 	ft_lstclear2(&(s->a));
 	ft_lstclear2(&(s->b));
 	free(ps.arr);
-	system("leaks -q push_swap");
 	return (0);
 }
