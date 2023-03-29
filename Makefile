@@ -6,7 +6,7 @@
 #    By: nwai-kea <nwai-kea@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/03/29 02:01:01 by nwai-kea          #+#    #+#              #
-#    Updated: 2023/03/29 16:23:06 by nwai-kea         ###   ########.fr        #
+#    Updated: 2023/03/29 17:30:19 by nwai-kea         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -55,7 +55,7 @@ clean:
 
 fclean: clean
 	$(RM) $(NAME)
-	make -C libft clean
+	make -C libft fclean
 
 re: fclean all
 
