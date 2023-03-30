@@ -6,7 +6,7 @@
 /*   By: nwai-kea <nwai-kea@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/29 02:03:46 by nwai-kea          #+#    #+#             */
-/*   Updated: 2023/03/29 02:03:46 by nwai-kea         ###   ########.fr       */
+/*   Updated: 2023/03/30 17:45:40 by nwai-kea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ void	sort(t_nodes *s, t_stack *ps)
 {
 	if (ft_checksort(s->a) && stack_full(s->a, ps->total))
 		return ;
-	if (ft_lstsize2(s->a) <= 5)
+	if (ft_lstsize2(s->a) <= 10)
 		ft_small_sort(&(s->a), &(s->b));
 	else
 	{
